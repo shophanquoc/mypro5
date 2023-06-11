@@ -59,20 +59,20 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                        <!-- <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li> -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Overviews</a>
+                            <a class="nav-link " href="#" onclick="showHeroes()">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Resume</a>
+                            <a class="nav-link" href="#about" onclick="showAbout()">Overviews</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
+                            <a class="nav-link" href="#resume" onclick="showResume()">Resume</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#projects" onclick="showProjects()">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" onclick="showContact()">Contact</a>
                         </li>
                     </ul>
                     <!-- <span class="navbar-text">
@@ -92,7 +92,7 @@
         </div>
     </div>
     <!-- overviews -->
-    <div class="about">
+    <div class="about" id="about">
         <div class="profile">
             <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
             <!-- Watch a tutorial on how to do this on YouTube (link)-->
@@ -127,7 +127,7 @@
     </div>
 
     <!-- slide--art -->
-    <div class="art">
+    <div class="art" id="art">
         <h2>I love Drawing and here are some of my art works:</h3>
             <div class="slide-image">
                 <!-- Swiper -->
@@ -166,23 +166,279 @@
             </div>
     </div>
 
-    <div class="test">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni ipsa aliquid, doloremque corporis porro
-            doloribus veritatis alias inventore ipsum officiis fugit aperiam ex provident consequuntur dolores omnis,
-            quidem sequi aspernatur.</p>
+    <div class="container px-5 my-5" id="resume">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-11 col-xl-9 col-xxl-8">
+                <!-- Experience Section-->
+                <section>
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h2 class="text-primary fw-bolder mb-0">Experience</h2>
+                        <!-- Download resume button-->
+                        <!-- Note: Set the link href target to a PDF file within your project-->
+                        <a class="btn btn-primary px-4 py-3" href="#!">
+                            <div class="d-inline-block bi bi-download me-2"></div>
+                            Download Resume
+                        </a>
+                    </div>
+                    <!-- Experience Card 1-->
+                    <div class="card shadow border-0 rounded-4 mb-5">
+                        <div class="card-body p-5">
+                            <div class="row align-items-center gx-5">
+                                <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                    <div class="bg-light p-4 rounded-4">
+                                        <div class="text-primary fw-bolder mb-2">Feb 2023 - April 2023</div>
+                                        <div class="small fw-bolder"> Intern NodeJS</div>
+                                        <div class="small text-muted"> by FSoft Academy</div>
+                                        <div class="small text-muted">FPT Software</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div> I had 1-month of training at Fsoft Academy about web programming, understand
+                                        the business skills, deeply understand web programming (HTML,CSS,JS,BOOTSTRAP
+                                        ...).</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Experience Card 2-->
+
+                </section>
+                <!-- Education Section-->
+                <section>
+                    <h2 class="text-secondary fw-bolder mb-4">Education</h2>
+                    <!-- Education Card 1-->
+                    <div class="card shadow border-0 rounded-4 mb-5">
+                        <div class="card-body p-5">
+                            <div class="row align-items-center gx-5">
+                                <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                    <div class="bg-light p-4 rounded-4">
+                                        <div class="text-secondary fw-bolder mb-2">SEP 2019 - NOV 2023</div>
+                                        <div class="mb-2">
+                                            <div class="small fw-bolder">Ha Noi University</div>
+                                            <!-- <div class="small text-muted">Learn by English</div> -->
+                                        </div>
+                                        <div class="fst-italic">
+                                            <div class="small text-muted">BACHELOR'S </div>
+                                            <div class="small text-muted"> INFORMATION SYSTEM</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div>Faculty of Information Technology learning in English.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Education Card 2-->
+
+                </section>
+                <!-- Divider-->
+                <div class="pb-5"></div>
+                <!-- Skills Section-->
+                <section>
+                    <!-- Skillset Card-->
+                    <div class="card shadow border-0 rounded-4 mb-5">
+                        <div class="card-body p-5">
+                            <!-- Professional skills list-->
+                            <div class="mb-5">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div
+                                        class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                        <i class="fas fa-tools"></i>
+                                    </div>
+                                    <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">
+                                            Tools</span></h3>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Git/Github
+                                        </div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                                            AdobeXD/Figma</div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                                            Postman</div>
+                                    </div>
+                                </div>
+                                <!-- <div class="row row-cols-1 row-cols-md-3">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Network
+                                            Security</div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Adobe
+                                            Software Suite</div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">User
+                                            Interface Design</div>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <!-- Languages list-->
+                            <div class="mb-0">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div
+                                        class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span>
+                                    </h3>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CSS</div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">ReactJS
+                                        </div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Bootstrap
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SCSS
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">PHP</div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">NodeJS</div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Java
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-0">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div
+                                        class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Database</span>
+                                    </h3>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">MySQL</div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">MongoDB
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">MariaDB
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
     </div>
-
-
+    <!-- project -->
+    <section class="py-5" id="projects">
+        <div class="container px-5 mb-5">
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-11 col-xl-9 col-xxl-8">
+                    <!-- Project Card 1-->
+                    <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                        <div class="card-body p-0">
+                            <div class="d-flex align-items-center">
+                                <div class="p-5">
+                                    <h2 class="fw-bolder">Project Name 1</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum
+                                        aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad
+                                        asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                </div>
+                                <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 2-->
+                    <div class="card overflow-hidden shadow rounded-4 border-0">
+                        <div class="card-body p-0">
+                            <div class="d-flex align-items-center">
+                                <div class="p-5">
+                                    <h2 class="fw-bolder">Project Name 2</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum
+                                        aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad
+                                        asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                </div>
+                                <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-gradient-primary-to-secondary text-white">
+        <div class="container px-5 my-5">
+            <div class="text-center">
+                <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+                <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" onclick="showContact()"
+                    href="#contact">Contact me</a>
+            </div>
+        </div>
+    </section>
 
     <!-- footer -->
-    <footer>
+    <!-- <footer>
         <div class="social">
             <a href="https://www.facebook.com/nvlap.ziip/"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/__nvlap.zip"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/lap-nguyen-2b0b3b1b2/"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/LAP200I"> <i class="fab fa-github"></i></a>
         </div>
-    </footer>
+    </footer> -->
 
 </body>
 
