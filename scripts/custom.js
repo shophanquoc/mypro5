@@ -3,7 +3,7 @@
 particlesJS("heroes", {
     "particles": {
       "number": {
-        "value": 180,
+        "value": 380,
         "density": {
           "enable": true,
           "value_area": 900
@@ -48,15 +48,15 @@ particlesJS("heroes", {
         }
       },
       "line_linked": {
-        "enable": true,
+        "enable": false,
         "distance": 150,
-        "color": "#035668",
+        "color": "#ffffff",
         "opacity": 0.4,
         "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 6,
+        "speed": 9,
         "direction": "none",
         "random": false,
         "straight": false,
@@ -86,14 +86,14 @@ particlesJS("heroes", {
         "grab": {
           "distance": 140,
           "line_linked": {
-            "opacity": 1
+            "opacity": 0.5
           }
         },
         "bubble": {
           "distance": 400,
           "size": 40,
           "duration": 2,
-          "opacity": 8,
+          "opacity": 5,
           "speed": 3
         },
         "repulse": {

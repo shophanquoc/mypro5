@@ -18,3 +18,13 @@ var swiper = new Swiper(".mySwiper", {
 
 
 swiper.slideTo(3);
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.querySelector(".navbar").style.backgroundColor = "black";
+    } else {
+        document.querySelector(".navbar").style.backgroundColor = "transparent";
+    }
+}
