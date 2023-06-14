@@ -82,3 +82,20 @@ function showHeroes() {
     document.querySelector("#projects").classList.remove("show");
     // document.querySelector("#heroes").classList.remove("hidden");
 }
+
+const homeLink = document.getElementById("home-link");
+const aboutLink = document.getElementById("about-link");
+const resumeLink = document.getElementById("resume-link");
+const projectsLink = document.getElementById("projects-link");
+const contactLink = document.getElementById("contact-link");
+
+homeLink.addEventListener("click", hideNavbar);
+aboutLink.addEventListener("click", hideNavbar);
+resumeLink.addEventListener("click", hideNavbar);
+projectsLink.addEventListener("click", hideNavbar);
+contactLink.addEventListener("click", hideNavbar);
+
+function hideNavbar() {
+    const navbar = document.querySelector(".navbar-collapse");
+    navbar.classList.remove("show");
+}

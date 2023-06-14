@@ -15,7 +15,7 @@ particlesJS("heroes", {
       "shape": {
         "type": "circle",
         "stroke": {
-          "width": 0,
+          "width": 1,
           "color": "#ffffff"
         },
         "polygon": {
