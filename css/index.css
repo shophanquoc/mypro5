@@ -208,6 +208,7 @@ ul li a {
     margin: 0;
     z-index: 1;
     box-sizing: border-box;
+    background: linear-gradient(to bottom, #000000, #035668, #000000);
 
     margin-bottom: 0;
 }
@@ -218,7 +219,7 @@ ul li a {
 /* +++++++++++++++ */
 .art h2 {
     text-align: center;
-    background: linear-gradient(to bottom, #000000, #035668);
+    /* background: linear-gradient(to bottom, #000000, #035668); */
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px aquamarine, 0 0 70px aquamarine, 0 0 80px aquamarine, 0 0 100px aquamarine, 0 0 150px aquamarine;
     color: whitesmoke;
     margin: 0;
@@ -326,6 +327,7 @@ footer {
     font-family: 'Comfortaa';
     height: 100px;
     width: 100%;
+    border: unset;
 
 
 }
@@ -387,8 +389,14 @@ footer {
     width: 58rem;
 }
 
+
+
 @media (max-width: 768px) {
     body {}
+
+    #contact {
+        width: 20rem;
+    }
 
     #contact .card {
         width: 100%;

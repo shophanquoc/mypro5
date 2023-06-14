@@ -12,7 +12,7 @@ canvas {
 
 /* ___________________________ */
 .slide-image {
-    background: linear-gradient(to bottom, #035668, #000000, #035668);
+    /* background: linear-gradient(to bottom, #035668, #000000, #035668); */
 }
 
 .swiper {
