@@ -73,7 +73,7 @@ particlesJS("heroes", {
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": true,
+          "enable": false,
           "mode": "grab"
         },
         "onclick": {
@@ -101,7 +101,7 @@ particlesJS("heroes", {
           "duration": 0.4
         },
         "push": {
-          "particles_nb": 4
+          "particles_nb": 15
         },
         "remove": {
           "particles_nb": 2

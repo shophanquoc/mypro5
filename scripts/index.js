@@ -24,12 +24,16 @@ window.onscroll = function () {
 
 function scrollFunction() {
     if (
-        document.body.scrollTop > 100 ||
-        document.documentElement.scrollTop > 100
+        document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50
     ) {
         document.querySelector(".navbar").style.backgroundColor = "black";
+        document.querySelector(".navbar").style.boxShadow = "0 10px 30px #035668";
+
     } else {
         document.querySelector(".navbar").style.backgroundColor = "transparent";
+        document.querySelector(".navbar").style.boxShadow = "none";
+
     }
 }
 function showAbout() {
@@ -39,6 +43,13 @@ function showAbout() {
     document.querySelector("#resume").classList.remove("show");
     document.querySelector("#projects").classList.remove("show");
     document.querySelector("#contact").classList.remove("show");
+    document.querySelector("#about-link").classList.add("active");
+    document.querySelector("#home-link").classList.remove("active");
+    document.querySelector("#resume-link").classList.remove("active");
+    document.querySelector("#projects-link").classList.remove("active");
+    document.querySelector("#contact-link").classList.remove("active");
+
+
 
 }
 
@@ -51,6 +62,11 @@ function showResume() {
     document.querySelector("#resume").classList.add("show");
     document.querySelector("#projects").classList.remove("show");
     document.querySelector("#contact").classList.remove("show");
+    document.querySelector("#resume-link").classList.add("active");
+    document.querySelector("#about-link").classList.remove("active");
+    document.querySelector("#home-link").classList.remove("active");
+    document.querySelector("#projects-link").classList.remove("active");
+    document.querySelector("#contact-link").classList.remove("active");
 }
 
 function showProjects() {
@@ -62,6 +78,11 @@ function showProjects() {
     document.querySelector("#resume").classList.remove("show");
     document.querySelector("#projects").classList.add("show");
     document.querySelector("#contact").classList.remove("show");
+    document.querySelector("#projects-link").classList.add("active");
+    document.querySelector("#resume-link").classList.remove("active");
+    document.querySelector("#about-link").classList.remove("active");
+    document.querySelector("#home-link").classList.remove("active");
+    document.querySelector("#contact-link").classList.remove("active");
 }
 
 function showContact() {
@@ -73,6 +94,12 @@ function showContact() {
     document.querySelector("#resume").classList.remove("show");
     document.querySelector("#projects").classList.remove("show");
     document.querySelector("#contact").classList.add("show");
+    document.querySelector("#contact-link").classList.add("active");
+    document.querySelector("#projects-link").classList.remove("active");
+    document.querySelector("#resume-link").classList.remove("active");
+    document.querySelector("#about-link").classList.remove("active");
+    document.querySelector("#home-link").classList.remove("active");
+
 }
 function showHeroes() {
     document.querySelector("#about").classList.remove("show");
@@ -80,7 +107,12 @@ function showHeroes() {
     document.querySelector("#contact").classList.remove("show");
     document.querySelector("#resume").classList.remove("show");
     document.querySelector("#projects").classList.remove("show");
-    // document.querySelector("#heroes").classList.remove("hidden");
+    document.querySelector("#home-link").classList.add("active");
+    document.querySelector("#contact-link").classList.remove("active");
+    document.querySelector("#projects-link").classList.remove("active");
+    document.querySelector("#resume-link").classList.remove("active");
+    document.querySelector("#about-link").classList.remove("active");
+
 }
 
 const homeLink = document.getElementById("home-link");
