@@ -89,7 +89,14 @@ body {
     margin: 0 5px;
 }
 
-ul li a {
+.nav-item .contact-link i {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+#navbarText ul li a {
     background: linear-gradient(to bottom, #022026, #035668);
     text-decoration: none;
     width: 100%;
@@ -117,12 +124,12 @@ ul li a {
 
 
 @media screen and (min-width:768px) {
-    ul li a:hover {
+    #navbarText ul li a:hover {
 
         background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
     }
 
-    ul li a::before {
+    #navbarText ul li a::before {
         content: '';
         position: absolute;
         top: 0;
@@ -134,7 +141,7 @@ ul li a {
         transition: 0.5s;
     }
 
-    ul li a:hover::before {
+    #navbarText ul li a:hover::before {
         transform: skewX(45deg) translateX(-160px);
     }
 
@@ -296,26 +303,25 @@ ul li a {
     position: relative;
     height: 30vw;
     width: 35vw;
-    border-radius: 100% 100% 10px 10px;
+    /* border-radius: 100% 100% 10px 10px; */
     border: 2px solid #ffffff;
     margin-top: 5vw;
-    max-height: 30rem;
+    /* min-height: 3rem; */
     max-width: 30rem;
-
 
 }
 
 .profile img {
     padding: 0;
-    height: 37vw;
-    max-height: 35rem;
-    width: 100%;
 
+    height: 50vw;
+    width: 100%;
+    max-height: 70vw;
     position: absolute;
     bottom: 0;
-    left: 51%;
+    left: 50%;
     transform: translateX(-50%);
-    overflow: clip;
+    /* overflow: clip; */
 }
 
 
@@ -350,7 +356,7 @@ footer {
 }
 
 /* _______________________p */
-#about,
+/* #about,
 #art,
 #resume,
 #projects,
@@ -361,19 +367,19 @@ footer {
 
 #about.show {
     display: flex;
-}
+} */
 
-#art.show,
+/* #art.show,
 #heroes.show,
 #resume.show,
 #projects.show,
 #contact.show {
     display: block;
-}
+} */
 
-.hidden {
+/* .hidden {
     display: none;
-}
+} */
 
 .navbar-nav {
     font-size: 1rem;
@@ -381,19 +387,43 @@ footer {
 }
 
 #contact {
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+
+
 }
 
 #contact .card {
     width: 65vw;
+    /* display: flex; */
+    /* align-items: center; */
+    /* margin: auto; */
+
 }
 
-#contact .card ul li {
-    text-transform: initial;
+#contact .card ul {
+    list-style-type: none;
+
+    font-size: 0.5rem;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
 }
+
+#contact .card ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+#contact .card ul li a:hover {
+    color: salmon;
+    text-decoration: none;
+
+}
+
 
 @media (max-width: 768px) {
 
@@ -476,14 +506,12 @@ footer {
 
     }
 
-    #contact .card {
-        width: 90vw;
-    }
+    #contact .card {}
 }
 
 /* IPAD */
 @media (max-width: 1024px) {
-    ul li a::before {
+    #navbarText ul li a::before {
         content: "";
         position: absolute;
         width: 100%;
@@ -516,10 +544,6 @@ footer {
     #navbarText {
         margin: 0;
     }
-
-
-
-
 
     .nav-link i {
         border: none;
